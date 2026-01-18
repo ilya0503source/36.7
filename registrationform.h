@@ -26,6 +26,8 @@ private slots:
     void on_loginButton_clicked();
 
     void on_buttonBox_accepted();
+    void on_buttonBox_rejected();
+
 public slots:
     void onRegistrationResponse(const QString& response);
 

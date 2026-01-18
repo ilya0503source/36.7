@@ -25,6 +25,8 @@ signals:
 private slots:
     void on_registrationPushButton_clicked();
     void on_buttonBox_accepted();
+    void on_buttonBox_rejected();
+
 public slots:
     void onLoginResponse(const QString& response);
 

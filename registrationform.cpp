@@ -60,3 +60,9 @@ void RegistrationForm::onRegistrationResponse(const QString& response) {
         QMessageBox::critical(this, "Ошибка", "Регистрация не удалась: " + response);
     }
 }
+
+void RegistrationForm::on_buttonBox_rejected()
+{
+    QApplication::quit();
+}
+

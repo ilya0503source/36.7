@@ -53,3 +53,9 @@ void LoginForm::onLoginResponse(const QString& response) {
         QMessageBox::critical(this, "Ошибка", "Вход не удался: " + response);
     }
 }
+
+void LoginForm::on_buttonBox_rejected()
+{
+    QApplication::quit();
+}
+
